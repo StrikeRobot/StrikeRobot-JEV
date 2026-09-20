@@ -88,6 +88,30 @@ When a robot sees a possible human silhouette behind debris, confidence may be t
 - Safety-critical motion control remains local at the edge and independent of cloud-level model routing.
 - Every action constraint, escalation route, confidence threshold, and risk weight must be validated for the deployment environment.
 
+## Public roadmap
+
+This roadmap describes the intended public direction of the project. The dates below are planned targets for 2026 and may change as field validation and safety requirements evolve.
+
+| Target date | Phase | Focus | Public outcome |
+| --- | --- | --- | --- |
+| **20 Sep 2026** | **Project launch** | Establish the public project and its technical direction. | Repository, README, architecture overview, and decision-policy examples. |
+| **Oct 2026** | **Foundation** | Define the reusable contract between scene state, JEV decisions, and safety policy. | Decision schemas, scene-state contracts, and integration examples. |
+| **Nov 2026** | **Prototype** | Build a demonstrable JEV decision gate with replayable sensor and scene-graph inputs. | Reference decision-gate code and a local replayable demo workflow. |
+| **Dec 2026** | **Validation and contribution** | Package learnings from controlled evaluation and prepare the public collaboration path. | Evaluation methodology, selected benchmarks, contribution guide, and reproducible examples. |
+
+## Source code and contribution
+
+Strike Robot aims to publish source code incrementally as components become stable, documented, and safe to share. The public repository will prioritize reusable interfaces, decision-policy examples, evaluation tools, and reference integrations.
+
+Safety-critical deployment controls, site-specific policies, credentials, customer data, and other sensitive operational assets are not intended for public release. Public code should be treated as a reference implementation until it has been validated for a specific robot, environment, and operating procedure.
+
+To contribute:
+
+1. Open an issue to discuss a proposal, bug, or integration idea.
+2. Keep pull requests focused, documented, and accompanied by relevant tests or reproducible examples.
+3. Do not include secrets, proprietary datasets, safety bypasses, or deployment credentials.
+4. Follow the Apache-2.0 license terms for contributions.
+
 ## Repository status
 
 This repository documents the Strike Robot + JEV decision architecture. Implementation modules, deployment recipes, and evaluation assets can be added as the system evolves.
